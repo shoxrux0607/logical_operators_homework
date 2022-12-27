@@ -15,8 +15,8 @@ def main(a, b, c):
     x = floor(a)
     y = floor(b)
     z = floor(c)
-    answer = (x == a < y == b and y == b < z == c)
+    answer = (x == a < y == b and y == b < z == c) or ( x == a > y == b and y == b > z == c)
     return answer
 
 
-print(main(3, 5, 15))
+print(main(13, 15, 1))
