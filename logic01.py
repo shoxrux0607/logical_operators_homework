@@ -1,3 +1,6 @@
+from math import *
+
+
 def main(a, b, c):
     """
     Given three integers a, b, c, 
@@ -9,8 +12,11 @@ def main(a, b, c):
     Returns:
         bool: answer
     """
-    answer = a < b and b < c
+    x = floor(a)
+    y = floor(b)
+    z = floor(c)
+    answer = (x == a < y == b and y == b < z == c)
     return answer
 
 
-print(main(31, 9, 15))
+print(main(3, 5, 15))
