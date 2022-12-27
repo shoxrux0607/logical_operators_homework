@@ -9,8 +9,8 @@ def main(a, b, c):
     Returns:
         bool: answer
     """
-    y = a < b and b < c
-    return y
+    
+    return a < b and b < c
 
 
-print(main(3, 41, 5))
+print(main(3, 4, 5))
