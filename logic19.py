@@ -8,4 +8,9 @@ def main(x):
     Returns:
         bool: answer
     """
-    return
+  
+
+    return (x >= 10 and x < pow(10,2) and x%10 == x//10) or (x >= pow(10,2) and x < pow(10,3) and x%10 == x//100)
+
+
+print(main(121))
